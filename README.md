@@ -10,7 +10,7 @@ Do the following steps
 `cd canvass-api`
 `npm install`
 
-2. Create  the .env file and supply the db host, username, and password for a mysql db you have access to with enough privileges to create a schema and tables.
+2. Create  the .env file at the project folder level and supply the db host, username, and password for a mysql db you have access to with enough privileges to create a schema and tables. See the example `.env.example` file for reference.
 
 3. Run the following commands to create the canvass schema and migrations
 
