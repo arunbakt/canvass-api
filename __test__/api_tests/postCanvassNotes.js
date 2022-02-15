@@ -3,6 +3,17 @@ const request = require('supertest');
 
 const app = require('../../app.js');
 
+const connectionPool = require('../../infra/mysqlCanvassDb');
+
+after(async () => {
+    connectionPool.end(err => {
+       if(err)
+       {
+           console.log("Error closing db pool connections");
+       }
+    });
+});
+
 describe('POST /canvass/canvass_notes with empty body', () => {
     it('responds with HTTP Error 422', (done) => {
         request(app)

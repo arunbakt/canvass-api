@@ -23,3 +23,7 @@ Create the tables needed by the api server by running db-migrate
 
 4. Run the following command to run the server
 `node .`
+
+## Automated API tests
+To run automated tests, use the command
+`npm run test`
